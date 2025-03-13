@@ -7,10 +7,8 @@ func _ready():
 	$VBoxContainer/QuitButton.pressed.connect(_on_quit_button_pressed)
 
 func _on_start_button_pressed():
-	# TODO: 实现开始新游戏逻辑
-	print("开始新游戏")
-	# 这里可以添加场景切换代码，例如：
-	# get_tree().change_scene_to_file("res://scenes/game/game.tscn")
+	# 切换到农场场景
+	get_tree().change_scene_to_file("res://scenes/game/farm/farm.tscn")
 	
 func _on_load_button_pressed():
 	# TODO: 实现载入游戏逻辑
